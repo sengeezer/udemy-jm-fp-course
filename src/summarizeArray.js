@@ -8,7 +8,7 @@ function sum(x, y) {
 
 const total = numbers.reduce(sum);
 
-console.log.og(total);
+console.log(total);
 
 // Average grades
 
@@ -28,24 +28,26 @@ function groupByGrade(acc, grade) {
   } = acc;
 
   if (grade >= 90) {
-    return { ...acc, a: a++ };
+    return { ...acc, a: ++a };
   }
 
   if (grade >= 80) {
-    return { ...acc, b: b++ };
+    return { ...acc, b: ++b };
   }
 
   if (grade >= 70) {
-    return { ...acc, c: c++ };
+    return { ...acc, c: ++c };
   }
 
   if (grade >= 60) {
-    return { ...acc, d: d++ };
+    return { ...acc, d: ++d };
   }
 
   if (grade < 60) {
-    return { ...acc, f: f++ };
+    return { ...acc, f: ++f };
   }
+
+  return acc;
 }
 
 const letterGradeCount = grades.reduce(groupByGrade, {});
