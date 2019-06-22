@@ -1,0 +1,29 @@
+{
+  "name": "udemy-jm-fp-course",
+  "version": "0.0.1",
+  "description": "Code from JMs FP JS course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sengeezer/udemy-jm-fp-course.git"
+  },
+  "keywords": [
+    "fp",
+    "functional",
+    "programming",
+    "udemy",
+    "JS"
+  ],
+  "author": "Fabio M. Albertin <fabio@albertin.co.uk> (http://ifab.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sengeezer/udemy-jm-fp-course/issues"
+  },
+  "homepage": "https://github.com/sengeezer/udemy-jm-fp-course#readme",
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
+}
