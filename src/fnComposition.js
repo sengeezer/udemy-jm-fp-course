@@ -18,4 +18,9 @@ console.log(shorterCount);
 
 const countWords = R.compose(R.length, R.split);
 
-console.log(countWords(' ', sentence));
+const countWords2 = R.compose(R.length, R.split(' '));
+
+const countWords3 = R.pipe(R.split(' '), R.length);
+
+// console.log(countWords(' ', sentence));
+console.log(countWords3(sentence));
