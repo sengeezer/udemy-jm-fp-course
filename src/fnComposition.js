@@ -15,3 +15,7 @@ console.log(wordCount);
 const shorterCount = R.length(R.split(' ', wordList));
 
 console.log(shorterCount);
+
+const countWords = R.compose(R.length, R.split);
+
+console.log(countWords(' ', sentence));
